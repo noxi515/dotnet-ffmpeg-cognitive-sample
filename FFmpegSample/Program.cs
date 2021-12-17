@@ -46,8 +46,8 @@ public class Program
         try
         {
             var speechToken = Environment.GetEnvironmentVariable("SPEECH_TOKEN");
-            var speechResion = Environment.GetEnvironmentVariable("SPEECH_RESION");
-            var speechConfig = SpeechConfig.FromSubscription(speechToken, speechResion);
+            var speechRegion = Environment.GetEnvironmentVariable("SPEECH_REGION");
+            var speechConfig = SpeechConfig.FromSubscription(speechToken, speechRegion);
             var sourceLanguageConfig = SourceLanguageConfig.FromLanguage("ja-JP");
             using var audioConfig = AudioConfig.FromWavFileInput(tempFilePath);
             using var speechRecognizer = new SpeechRecognizer(speechConfig, sourceLanguageConfig, audioConfig);
