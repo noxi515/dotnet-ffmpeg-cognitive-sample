@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "FFmpegSample": {
+      "commandName": "Project",
+      "commandLineArgs": "Audio file path",
+      "environmentVariables": {
+        "SPEECH_TOKEN": "Cognitive speech subscription token key",
+        "SPEECH_RESION": "japaneast" 
+      }
+    }
+  }
+}
